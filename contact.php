@@ -46,15 +46,13 @@ if (isset($_POST['email'])){
     if(strlen($error_message) > 0 ){
       died($error_message)
       }
+
       $email_message = "Form details below.\n\n";
 
-    function clean_string($string){
-      $bad = array("content-type", "bcc:", "to:", "cc:", "href");
-      return str_replace($bad, "", $string);
-      }
-    $email_message .= "Name:" . clean_string($name) . "\n";
-    $email_message .= "Email:" . clean_string($email) . "\n";
-    $email_message .= "Message:" . clean_string($message) . "\n";
+
+    $email_message .= "Name:" . $name;
+    $email_message .= "Email:" . $email;
+    $email_message .= "Message:" . $message;
 
     //create email headers
     $headers = 'From: ' . $email_From . "\r\n". 'Reply-To:' . $email
