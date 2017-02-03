@@ -4,20 +4,20 @@ if (isset($_POST['email'])){
   // Here is the email to information
   $email_to="mfolvarska12@gmail.com";
   $email_subject="FROM WEBSITE"
-  $email_from = "Maria Folvarska Web"
+  $email_from = "Maria Folvarska"
 
   //errorcode
 
   function died($error){
     echo "I am sorry, but there were error(s) found with the form you submitted.";
-    echo "These erros appear below.<br/><br/>";
+    echo "These errors appear below.<br/><br/>";
     echo $error. "<br/><br?>";
     echo "Please go back and fix these errors.<br/>";
     die();
   }
 
   //validation
-    if(!isset($_POST['name'])) ||
+    if(!isset($_POST['name']) ||
     !isset($_POST['email']) ||
     !isset($_POST['message'])){
       died('We are sorry but there appears to be a problem with the form you
