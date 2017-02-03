@@ -46,14 +46,12 @@ if (isset($_POST['email'])){
     if(strlen($error_message) > 0 ){
       died($error_message)
       }
-
-      $email_message = "Form details below.\n\n";
-
+      else{
 
     $email_message .= "Name:" . $name;
     $email_message .= "Email:" . $email;
     $email_message .= "Message:" . $message;
-
+    }
     //create email headers
     $headers = 'From: ' . $email_From . "\r\n". 'Reply-To:' . $email
     "\r\n" .
