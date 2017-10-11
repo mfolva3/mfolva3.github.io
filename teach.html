@@ -2,74 +2,41 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <title>Maria Folvarska</title>
   <style type="text/css">
-  html{
-    background-color: "#7DCEA0";
+
+  body {
+    font-family: Arial, Helvetica,sans-serif;
+    color: #000d1a;
+    background-color: #7DCEA0;
+    text-align:center;
   }
-  #form-wrap{
-    width: 600px;
-    border: 5px solid #ccc;
-    background-color: #afc8de;
-    margin: 50px auto;
-    padding: 20px 0
+  img {
+    border: 4px solid #f2f2f2;
+    border-radius: 4px;
   }
-  form{
-    width: 500px;
-    margin: 0 auto
+  .topnav{
+    background-color: #2E4053;
+    overflow: hidden;
+    text-align: center;
   }
-  label{
+  .topnav a {
+    float: left;
     display: block;
-    margin: 5px 0 5px 20px;
-    font: 18px sans-serif;
-    color: blue
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
-  input{
-    width:250px;
-    margin:0 0 0 20px
-  }
-  textarea{
-    width: 250px;
-    margin:0 0 0 20px;
-  }
-  fieldset{
-    border:none;
-    background-color: "yellow";
-    padding: 0 0 20px 0;
-  }
-  .labelone{
-    margin-top: 10px;
-  }
-  .btn{
-    width:125px
-  }
-  form h1{
-    margin: 20px 0 0 30px;
-    font: 24px sans-serif;
-    color: "purple";
-    font-weight: bold;
+  .topnav a:hover {
+    background-color: #4CAF50;
+    color: white;
   }
   </style>
 </head>
 
 <body>
-  <div id="form-wrap">
-    <form>
-      <fieldset>
-      <h1>Contact me:</h1>
-        <label class="labelone" for="name">Name:</label>
-        <input name="name"/>
-        <label for="email">Email: </label>
-        <input name="email"/>
-        <label for="message">Message: </label>
-        <textarea name="message"></textarea>
-      </fieldset>
 
-      <fieldset>
-        <input class="btn" type="submit" value = "Send Email"/>
-        <input class="btn" type="reset" value = "Reset Form"/>
-      </fieldset>
-    </form>
-
-  </div>
 </body>
 </html>
